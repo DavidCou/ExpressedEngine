@@ -8,7 +8,7 @@ namespace ExpressedEngine.ExpressedEngine
 {
     /// <summary>
     /// Sets up a new Vector 2 class
-    /// Handles all of the postioning
+    /// Handles all of the positioning
     /// </summary>
     public class Vector2 
     {

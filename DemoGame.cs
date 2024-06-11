@@ -91,22 +91,22 @@ namespace ExpressedEngine
 
             if (up)
             {
-                player.Postion.Y -= 2f;
+                player.Position.Y -= 2f;
             }
 
             if (down)
             {
-                player.Postion.Y += 2f;
+                player.Position.Y += 2f;
             }
 
             if (left)
             {
-                player.Postion.X -= 2f;
+                player.Position.X -= 2f;
             }
 
             if (right)
             {
-                player.Postion.X += 2f;
+                player.Position.X += 2f;
             }
 
 
@@ -120,13 +120,13 @@ namespace ExpressedEngine
             {
                 //Log.Info($"COLLIDING! {times}");
                 //times++;
-                player.Postion.X = lastPos.X;
-                player.Postion.Y = lastPos.Y;
+                player.Position.X = lastPos.X;
+                player.Position.Y = lastPos.Y;
             }
             else
             {
-                lastPos.X = player.Postion.X;
-                lastPos.Y = player.Postion.Y;
+                lastPos.X = player.Position.X;
+                lastPos.Y = player.Position.Y;
             }
         }
 

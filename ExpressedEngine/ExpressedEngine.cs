@@ -190,7 +190,7 @@ namespace ExpressedEngine.ExpressedEngine
             Graphics g = e.Graphics;
             g.Clear(backgroundColour); // The colour that is used to clear the screen aka the background colour
 
-            //Sets up the renderer so it is inline with the camera
+            // Sets up the renderer so it is inline with the camera
             g.TranslateTransform(CameraPostion.X, CameraPostion.Y);
             g.RotateTransform(CameraAngle);
 
@@ -204,7 +204,7 @@ namespace ExpressedEngine.ExpressedEngine
 
                 foreach(Sprite2D sprite in AllSprites) 
                 {
-                    g.DrawImage(sprite.Sprite, sprite.Postion.X, sprite.Postion.Y, sprite.Scale.X, sprite.Scale.Y);
+                    g.DrawImage(sprite.Sprite, sprite.Position.X, sprite.Position.Y, sprite.Scale.X, sprite.Scale.Y);
                 }
             }
             catch (Exception)
@@ -224,10 +224,10 @@ namespace ExpressedEngine.ExpressedEngine
         // Adds/removes/updates assests (ie a rock, an explosion ect)
         public abstract void OnDraw();
 
-        //Checks for key presses
+        // Checks for key presses
         public abstract void GetKeyDown(KeyEventArgs e);
         
-        //Checks for Key releases
+        // Checks for Key releases
         public abstract void GetKeyUp(KeyEventArgs e);
     }
 }
